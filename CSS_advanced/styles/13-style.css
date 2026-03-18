@@ -53,30 +53,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* --- RE-CORRECTION Task 13 --- */
+/* --- Correction Task 13 : États des liens --- */
 
-/* Cible les ancres contenant un lien */
-a {
+/* 1. Cible les ancres avec un attribut href */
+a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* État visité : directement après la déclaration de base */
-a:visited {
+/* 2. État visité */
+a[href]:visited {
   font-style: italic;
 }
 
-/* État hover : directement après visited */
-a:hover {
+/* 3. État au survol */
+a[href]:hover {
   text-decoration: underline;
 }
 
-/* État active : directement après hover */
-a:active {
+/* 4. État actif au clic */
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
-/* --- Suite du fichier --- */
+/* --- Fin Task 13 --- */
 
 .visually-hidden {
   display: none;

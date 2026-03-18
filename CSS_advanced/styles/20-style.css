@@ -183,8 +183,7 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button,
-select { /* 1 */
+button, select { /* 1 */
   text-transform: none;
 }
 
@@ -476,7 +475,7 @@ a:active {
 
 /* 6. Grille (Grid System) */
 
-/* TASK 20 : Règle Clearfix après chaque instance de .row */
+/* TASK 20 : Tentative de correction rigoureuse */
 .row:after {
   content: "";
   display: table;

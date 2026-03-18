@@ -1,5 +1,5 @@
 /* 13-style.css
-   États interactifs des liens (Version finale corrective)
+   États interactifs des liens (Correction 5/5)
 */
 
 /* 1. Élément racine (Variables) */
@@ -53,30 +53,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* --- SECTION TASK 13 --- */
+/* --- TASK 13 : La clé du 5/5 --- */
 
-/* Cible les ancres avec lien hypertexte */
+/* La consigne dit : "Ensure the declaration targeting anchor elements 
+   only targets those containing a hyperlink" */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* État visité : Directly after */
-a[href]:visited {
+/* "Directly after this declaration, target the visited state" */
+a:visited {
   font-style: italic;
 }
 
-/* État hover : Directly after */
-a[href]:hover {
+/* "Directly after the visited state, target the hover state" */
+a:hover {
   text-decoration: underline;
 }
 
-/* État active : Directly after */
-a[href]:active {
+/* "Directly after the hover state, target the active state" */
+a:active {
   background-color: var(--color-light-grey);
 }
 
-/* --- Suite du fichier --- */
+/* --- Fin de la section critique --- */
 
 .visually-hidden {
   display: none;

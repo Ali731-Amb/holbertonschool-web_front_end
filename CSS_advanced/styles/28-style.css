@@ -396,7 +396,7 @@ template {
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   
-  /* Edit property value to white variable */
+  /* Edit the nav-item-link-hover property */
   --nav-item-link-hover: var(--color-white);
 
   --section-tagline-margin: 0;
@@ -517,13 +517,15 @@ a:active {
 .nav .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  /* Required for pseudo-element positioning */
+  position: relative;
 }
 
 .nav .nav-link:hover {
   color: var(--nav-item-link-hover);
 }
 
-/* TASK 29: Pseudo-elements */
+/* Pseudo elements for nav-link inside nav */
 .nav .nav-link::before {
   content: "";
   position: absolute;
@@ -534,6 +536,7 @@ a:active {
   height: 0.2rem;
 }
 
+/* Hover state for pseudo elements */
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;

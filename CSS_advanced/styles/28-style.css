@@ -399,7 +399,6 @@ template {
 
   --section-tagline-margin: 0;
 
-  /* Button properties */
   --button-display: inline-block;
   --button-padding: 1.5rem 3rem;
   --button-border: 0.2rem solid var(--color-primary);
@@ -409,6 +408,14 @@ template {
   --button-hover-color: var(--color-white);
   --button-hover-text-decoration: none;
   --button-hover-background: var(--color-primary);
+
+  /* TASK 28: Header Custom Properties */
+  --header-padding: 4rem 0 0;
+  --header-logo-position: relative;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
+  --header-logo-link-top: -1rem;
+  --header-logo-link-left: 0;
 }
 
 /* 2. Règle universelle Box-Sizing */
@@ -432,12 +439,7 @@ body {
   line-height: var(--line-height-base);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
@@ -460,7 +462,7 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
-/* Button class */
+/* Classes Boutons */
 .button {
   display: var(--button-display);
   padding: var(--button-padding);
@@ -474,6 +476,22 @@ a:active {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
   background-color: var(--button-hover-background);
+}
+
+/* TASK 28: Header Selectors */
+.header {
+  padding: var(--header-padding);
+}
+
+.header-logo {
+  position: var(--header-logo-position);
+}
+
+.header-logo a {
+  display: var(--header-logo-link-display);
+  position: var(--header-logo-link-position);
+  top: var(--header-logo-link-top);
+  left: var(--header-logo-link-left);
 }
 
 /* 5. Navigation */
@@ -601,7 +619,7 @@ ul.row {
   padding: 10rem 40rem 2rem 0;
 }
 
-/* Services Card */
+/* Services */
 .card-services .card-title {
   margin: 0;
 }
@@ -618,7 +636,7 @@ ul.row {
   text-decoration: none;
 }
 
-/* Testimonial Card */
+/* Témoignages */
 .card-testimonial {
   text-align: center;
 }

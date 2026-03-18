@@ -1,0 +1,59 @@
+/* 5-style.css
+   Configuration des tailles de polices (Font sizes) et unité rem
+*/
+
+/* 1. Mise à jour de l'élément racine */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* NOUVEAU : Définition des échelles de taille de police */
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+}
+
+/* --- Mise à jour Task 1 & 5 --- */
+html {
+  scroll-behavior: smooth;
+  /* NOUVEAU : Définit la base 1rem = 10px pour simplifier les calculs */
+  font-size: 62.5%;
+}
+
+/* --- Mise à jour Task 2, 4 & 5 --- */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  /* NOUVEAU : Application de la taille medium par défaut (soit 16px) */
+  font-size: var(--font-size-medium);
+}
+
+/* Rappel Task 4 : Titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+/* Rappel Task 2 : Liens */
+a {
+  color: var(--text-color);
+}
+
+/* Masquage technique */
+.visually-hidden {
+  display: none;
+}
+
+/* Couleurs d'accentuation */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}

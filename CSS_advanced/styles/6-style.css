@@ -1,0 +1,64 @@
+/* 6-style.css
+   Configuration de l'épaisseur des polices (Font weights)
+*/
+
+/* 1. Mise à jour de l'élément racine */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+  /* NOUVEAU : Définition des graisses de police */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* --- Rappel Task 1 & 5 --- */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* --- Mise à jour Task 2, 4, 5 & 6 --- */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  /* NOUVEAU : Application de la graisse normale par défaut */
+  font-weight: var(--font-weight-regular);
+}
+
+/* --- Mise à jour Task 4 & 6 --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+  /* NOUVEAU : Application de la graisse grasse pour tous les titres */
+  font-weight: var(--font-weight-bold);
+}
+
+/* Rappel Task 2 : Liens */
+a {
+  color: var(--text-color);
+}
+
+/* Masquage technique */
+.visually-hidden {
+  display: none;
+}
+
+/* Couleurs d'accentuation */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}

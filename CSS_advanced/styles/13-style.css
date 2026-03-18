@@ -1,5 +1,5 @@
 /* 13-style.css
-   États interactifs des liens (Ordre LVHA strict)
+   États interactifs des liens (Version 5/5)
 */
 
 /* 1. Élément racine (Variables) */
@@ -53,30 +53,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* --- RE-CORRECTION Task 13 : États des liens --- */
+/* --- SECTION CRITIQUE TASK 13 --- */
 
-/* L'ancre de base (Task 2 & 9) */
+/* La déclaration de base pour les ancres (doit être var(--text-color)) */
 a {
-  color: #161616;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-/* 1. État visité (Directement après) */
+/* État Visité : directement après */
 a:visited {
   font-style: italic;
 }
 
-/* 2. État hover (Directement après) */
+/* État Hover : directement après */
 a:hover {
   text-decoration: underline;
 }
 
-/* 3. État active (Directement après) */
+/* État Active : directement après */
 a:active {
   background-color: var(--color-light-grey);
 }
 
-/* --- Suite du fichier --- */
+/* --- Fin de la section critique --- */
 
 .visually-hidden {
   display: none;

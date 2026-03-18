@@ -1,9 +1,5 @@
-/* 1-style.css
-Task 1: Effortless transitions when scrolling
-Apply smooth scrolling behavior to the html element
-*/
+/* Custom properties or Reset could go here if asked in Task 0 */
 
 html {
-  /* Enables smooth scrolling when navigating between anchors */
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }

@@ -53,25 +53,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* --- Mise à jour Task 13 : États des liens --- */
+/* --- Correction Task 13 : États des liens --- */
 
-/* Cible uniquement les <a> possédant un attribut href */
+/* 1. Cible les ancres avec un attribut href */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* État : Visité (déjà cliqué) */
+/* 2. État visité */
 a[href]:visited {
   font-style: italic;
 }
 
-/* État : Survol (souris au-dessus) */
+/* 3. État au survol */
 a[href]:hover {
   text-decoration: underline;
 }
 
-/* État : Actif (au moment du clic) */
+/* 4. État actif au clic */
 a[href]:active {
   background-color: var(--color-light-grey);
 }

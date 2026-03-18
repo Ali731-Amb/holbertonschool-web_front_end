@@ -1,0 +1,33 @@
+/* 2-style.css
+   Incrémentation de la Task 1 vers la Task 2 
+*/
+
+/* --- Rappel Task 1 --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Nouvelles déclarations Task 2 --- */
+
+/* 1. Configuration du Body */
+body {
+  color: #161616; /* Couleur de premier plan (Foreground) */
+}
+
+/* 2. Configuration des ancres (Liens) */
+a {
+  color: #161616;
+}
+
+/* 3. Masquage des éléments accessibles uniquement aux lecteurs d'écran */
+.visually-hidden {
+  display: none;
+}
+
+/* 4. Couleurs d'accentuation (Red) 
+   Note : On regroupe les sélecteurs qui partagent la même propriété 
+*/
+.card-category,
+.section-tagline {
+  color: #D73953;
+}

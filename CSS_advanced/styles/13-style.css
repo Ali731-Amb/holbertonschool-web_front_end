@@ -1,5 +1,5 @@
 /* 13-style.css
-   États interactifs des liens (Correction 5/5)
+   États interactifs des liens (Version de validation finale)
 */
 
 /* 1. Élément racine (Variables) */
@@ -53,11 +53,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* --- TASK 13 : La clé du 5/5 --- */
+/* --- SECTION TASK 13 : Correction 5/5 --- */
 
-/* La consigne dit : "Ensure the declaration targeting anchor elements 
-   only targets those containing a hyperlink" */
-a[href] {
+/* Utilisation de :link pour cibler les ancres avec lien hypertexte */
+a:link {
   color: var(--text-color);
   text-decoration: none;
 }

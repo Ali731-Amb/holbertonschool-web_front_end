@@ -1,0 +1,40 @@
+/* 3-style.css
+   Mise en place des variables (Custom Properties)
+*/
+
+/* 1. Définition des variables sur l'élément racine */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+}
+
+/* --- Rappel Task 1 --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Mise à jour Task 2 avec les variables --- */
+
+/* Utilisation de --text-color pour le corps et les liens */
+body {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+}
+
+/* Masquage technique */
+.visually-hidden {
+  display: none;
+}
+
+/* Utilisation de --color-primary pour les accents */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}

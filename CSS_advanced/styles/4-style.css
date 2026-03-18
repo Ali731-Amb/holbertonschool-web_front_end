@@ -1,0 +1,51 @@
+/* 4-style.css
+   Gestion de la typographie et des familles de polices
+*/
+
+/* 1. Mise à jour de l'élément racine */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  /* NOUVEAU : Définition des familles de polices */
+  /* On définit la même pile de polices (stack) pour la base et les titres */
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* --- Rappel Task 1 --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Mise à jour Task 2 & 4 --- */
+
+body {
+  color: var(--text-color);
+  /* NOUVEAU : Application de la police de base au body */
+  font-family: var(--font-family-base);
+}
+
+/* NOUVEAU : Déclaration pour les 6 niveaux de titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+a {
+  color: var(--text-color);
+}
+
+/* Masquage technique */
+.visually-hidden {
+  display: none;
+}
+
+/* Couleurs d'accentuation */
+.card-category,
+.section-tagline {
+  color: var(--color-primary);
+}

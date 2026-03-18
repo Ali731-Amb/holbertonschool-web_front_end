@@ -476,17 +476,17 @@ a:active {
 
 /* 6. Grille (Grid System) */
 
-/* TASK 20 : Correction ciblée */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* TASK 20 : Tentative avec espace dans le content */
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 .col-1-3 {

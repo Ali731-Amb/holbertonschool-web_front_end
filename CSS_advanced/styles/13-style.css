@@ -1,5 +1,5 @@
 /* 13-style.css
-   États interactifs des liens (Pseudo-classes)
+   États interactifs des liens (Ordre LVHA strict)
 */
 
 /* 1. Élément racine (Variables) */
@@ -53,30 +53,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
 
-/* --- Mise à jour Task 13 : États des liens --- */
+/* --- RE-CORRECTION Task 13 : États des liens --- */
 
-/* Cible uniquement les <a> possédant un attribut href */
-a[href] {
-  color: var(--text-color);
+/* L'ancre de base (Task 2 & 9) */
+a {
+  color: #161616;
   text-decoration: none;
 }
 
-/* État : Visité (déjà cliqué) */
-a[href]:visited {
+/* 1. État visité (Directement après) */
+a:visited {
   font-style: italic;
 }
 
-/* État : Survol (souris au-dessus) */
-a[href]:hover {
+/* 2. État hover (Directement après) */
+a:hover {
   text-decoration: underline;
 }
 
-/* État : Actif (au moment du clic) */
-a[href]:active {
+/* 3. État active (Directement après) */
+a:active {
   background-color: var(--color-light-grey);
 }
 
-/* --- Fin Task 13 --- */
+/* --- Suite du fichier --- */
 
 .visually-hidden {
   display: none;
